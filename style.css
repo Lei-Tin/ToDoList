@@ -10,7 +10,7 @@ html, body {
 }
 
 #subtitle {
-    margin-top: -0.5em;
+    margin-top: 1.1em;
     text-align: center;
     font-weight: normal;
     font-size: 0.8em;
@@ -18,7 +18,7 @@ html, body {
 }
 
 #github-page {
-    margin-top: -0.5em;
+    margin-top: 0.9em;
     text-align: center;
     font-weight: normal;
     font-size: 1em;
@@ -37,14 +37,14 @@ a:hover {
     display: flex;
     margin: 1vh auto;
     width: 55vw;
-    height: 7.5vh;
+    height: 4rem;
     justify-content: center;
     align-items: center;
 }
 
 #task-add input {
     width: 40vw;
-    height: 4vh;
+    height: 2rem;
     margin-right: 1vw;
     font-size: 0.9rem;
     border-top: none;
@@ -55,7 +55,7 @@ a:hover {
 
 #task-add button {
     width: 12.5vw;
-    height: 5vh;
+    height: 2.5rem;
     margin-right: 0.3vw;
     font-size: 0.9rem;
     font-weight: bold;
