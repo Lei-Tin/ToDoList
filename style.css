@@ -1,0 +1,109 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+#title {
+    margin-top: 5vh;
+    text-align: center;
+    font-weight: 600;
+}
+
+#subtitle {
+    margin-top: -2vh;
+    text-align: center;
+    font-weight: normal;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+#github-page {
+    margin-top: -1vh;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+a:link, a:visited, a:active {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+#task-add {
+    display: flex;
+    margin: 1vh auto;
+    width: 55vw;
+    height: 7.5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-add input {
+    width: 40vw;
+    height: 4vh;
+    margin-right: 1vw;
+    margin-left: 0.3vw;
+    font-size: 0.9rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid rgb(100, 149, 237);
+}
+
+#task-add button {
+    width: 12.5vw;
+    height: 5vh;
+    margin-right: 0.3vw;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    /*
+    Will add JavaScript code here to change the color of the button depending if we have items
+    within the input field on the left of it
+    */
+    background-color: rgba(100, 149, 237, 1);
+    border: none;
+}
+
+#task-add button:hover {
+    background-color: rgba(100, 149, 237, 0.5);
+    cursor: pointer;
+}
+
+#task-list {
+    position: relative;
+    font-size: 1.2rem;
+    list-style: none;
+    width: 55vw;
+    padding: 0;
+    margin: auto;
+    /*border: 3px solid green;*/
+}
+
+#task-list li {
+    position: relative;
+    margin: 1em auto;
+}
+
+.task-checkbox {
+    margin-right: 1em;
+}
+
+.delete-btn {
+    position: absolute;
+    right: 1%;
+    padding: 0.75em;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Flat_cross_icon.svg');
+    background-size: cover;
+    border: none;
+    animation: all 0.5s ease-in-out;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+}

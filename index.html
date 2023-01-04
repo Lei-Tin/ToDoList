@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>To-Do List</h1>
-    <input id="input-task" aria-label="Input Field for Task Name">
-    <button id="add-task-button">ADD TASK</button>
+    <h1 id="title">To-Do List</h1>
+    <p id="subtitle">A website To-Do List developed by Ray</p>
+    <p id="github-page"><a href="https://github.com/Lei-Tin/ToDoList">GitHub Project Page</a></p>
+    <div id="task-add">
+        <input id="input-task" aria-label="Input Field for Task Name">
+        <button id="add-task-button">ADD TASK</button>
+    </div>
 
     <!-- Creating a list with 3 hardcoded items -->
     <ul id="task-list">
         <li>
-            <input type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Wake Up</span><button class="delete-btn"></button>
+            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Wake Up</span><button class="delete-btn"></button>
         </li>
         <li>
-            <input type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Eat</span><button class="delete-btn"></button>
+            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Eat</span><button class="delete-btn"></button>
         </li>
         <li>
-            <input type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Sleep</span><button class="delete-btn"></button>
+            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Sleep</span><button class="delete-btn"></button>
         </li>
     </ul>
 </body>
