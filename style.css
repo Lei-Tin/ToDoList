@@ -4,13 +4,13 @@ html, body {
 }
 
 #title {
-    margin-top: 5vh;
+    margin-top: 1em;
     text-align: center;
     font-weight: 600;
 }
 
 #subtitle {
-    margin-top: -2vh;
+    margin-top: -0.5em;
     text-align: center;
     font-weight: normal;
     font-size: 0.8em;
@@ -18,7 +18,7 @@ html, body {
 }
 
 #github-page {
-    margin-top: -1vh;
+    margin-top: -0.5em;
     text-align: center;
     font-weight: normal;
     font-size: 1em;
@@ -46,7 +46,6 @@ a:hover {
     width: 40vw;
     height: 4vh;
     margin-right: 1vw;
-    margin-left: 0.3vw;
     font-size: 0.9rem;
     border-top: none;
     border-left: none;
@@ -81,7 +80,6 @@ a:hover {
     width: 55vw;
     padding: 0;
     margin: auto;
-    /*border: 3px solid green;*/
 }
 
 #task-list li {
@@ -97,13 +95,14 @@ a:hover {
     position: absolute;
     right: 1%;
     padding: 0.75em;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8f/Flat_cross_icon.svg');
+    background-image: url('assets/cross.svg');
     background-size: cover;
+    background-color: #ffffff;
     border: none;
-    animation: all 0.5s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 
 .delete-btn:hover {
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
