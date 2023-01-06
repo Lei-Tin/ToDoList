@@ -4,7 +4,7 @@ let addTaskButton = document.getElementById("add-task-button");
 // Disabling the button at the start
 // addTaskButton.disabled = true;
 
-function validateInput(event) {
+function validateInput() {
     if (inputField.value.length > 0) {
         // addTaskButton.disabled = false;
         addTaskButton.style.backgroundColor = "rgba(100, 149, 237, 1)";
@@ -16,13 +16,13 @@ function validateInput(event) {
     }
 }
 
-addTaskButton.addEventListener('mouseover', event => {
+addTaskButton.addEventListener('mouseover', () => {
     if (inputField.value.length > 0) {
         addTaskButton.style.backgroundColor = "rgba(100, 149, 237, 0.75)";
     }
 })
 
-addTaskButton.addEventListener('mouseleave', event => {
+addTaskButton.addEventListener('mouseleave', () => {
     if (inputField.value.length > 0) {
         addTaskButton.style.backgroundColor = "rgba(100, 149, 237, 1)";
     }
@@ -32,7 +32,7 @@ inputField.addEventListener('input', validateInput);
 
 let taskList = document.getElementById("task-list");
 
-function addTask(event) {
+function addTask() {
     const li = document.createElement('li');
 
     const item = inputField.value;
@@ -62,7 +62,7 @@ function addTask(event) {
     taskList.appendChild(li);
 
     inputField.value = '';
-    validateInput(null);
+    validateInput();
 }
 
 function deleteTask(btnItem) {
