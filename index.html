@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,14 +18,15 @@
     <!-- Creating a list with 3 hardcoded items -->
     <ul id="task-list">
         <li>
-            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Wake Up</span><button class="delete-btn"></button>
+            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for item"><span class="task">Wake Up</span><button class="delete-btn" onclick="deleteTask(this)"></button>
         </li>
         <li>
-            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Eat</span><button class="delete-btn"></button>
+            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for item"><span class="task">Eat</span><button class="delete-btn" onclick="deleteTask(this)"></button>
         </li>
         <li>
-            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for ToDo"><span class="task">Sleep</span><button class="delete-btn"></button>
+            <input class="task-checkbox" type="checkbox" aria-label="Checkbox for item"><span class="task">Sleep</span><button class="delete-btn" onclick="deleteTask(this)"></button>
         </li>
     </ul>
+    <script src="tasks.js"></script>
 </body>
 </html>
