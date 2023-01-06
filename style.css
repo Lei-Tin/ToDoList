@@ -81,18 +81,28 @@ a:hover {
 }
 
 #task-list li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin: 1em auto;
 }
 
+.task {
+    white-space: normal;
+    width: 50vw;
+    overflow-wrap: anywhere;
+}
+
 .task-checkbox {
     margin-right: 1em;
+    width: 1.2em;
+    height: 1.2em;
 }
 
 .delete-btn {
-    position: absolute;
-    right: 1%;
-    padding: 0.75em;
+    margin: auto 1em;
+    padding: 1.1em;
     background-image: url('assets/cross.svg');
     background-size: cover;
     background-color: #ffffff;

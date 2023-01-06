@@ -44,6 +44,9 @@ function addTask(event) {
 
     li.appendChild(input);
 
+    const para = document.createElement('p');
+    li.append(para);
+
     const span = document.createElement('span');
     span.setAttribute('class', 'task');
     span.appendChild(document.createTextNode(`${item}`));
