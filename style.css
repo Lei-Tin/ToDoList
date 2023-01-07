@@ -69,6 +69,7 @@ a:hover {
     transition: background-color 0.5s;
     background-color: rgba(100, 149, 237, 0.5);
     border: none;
+    cursor: not-allowed;
 }
 
 #task-list {
@@ -113,4 +114,8 @@ a:hover {
 .delete-btn:hover {
     cursor: pointer;
     transform: scale(1.2);
+}
+
+.strike-through {
+    text-decoration: line-through;
 }
